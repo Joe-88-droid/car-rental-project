@@ -2,8 +2,8 @@
 This is a car-rental project mainly made with php; contains both user and admin interface. It allows users to make reservations of cars they want to hire while the admin manages the reservations.
 
 ## requirements
-> XAMPP
-> VSCODE
+> XAMPP,
+> VSCODE,
 > GIT
 
 ### procedure
