@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-position: center;
+  background-size: cover;
+  background-color: #6F5C58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form{
+  width: 500px;
+  border: 2px solid #6F5C58;
+  padding: 30px;
+  background: #797D7F;
+  border-radius: 15px;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+input{
+  display: block;
+  border: 2px solid #6F5C58;
+  width: 95%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+label{
+  color: #212120;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.sign-in-button {
+  text-align: center;
+}
+
+button{
+  width: 150px;
+  color: #283747;
+  background: #797D7F;
+  border: 1px solid #283747;
+  margin: 15px auto;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  height: 49px;
+  border-radius: 49px;
+  transition: 0.5s;
+}
+
+button:hover{
+  background:#283747;
+  color:#797D7F;
+}
+
+.error{
+  background: #DAF7A6;
+  color: #212120;
+  padding: 10px;
+  margin: 20px auto;
+  width: 95%;
+  border-radius: 5px;
+}

@@ -1,0 +1,872 @@
+/*** START COMMONN STYLE ***/
+
+:root{
+  --bgcolor: #131928;
+  --lightchocolate: #6F5C58;
+  --lightgrey: #797D7F;
+  --neonblue: #73C4FA;
+  --sidebar:#11101D;
+  
+  --blue: #4e73df;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #e74a3b;
+  --orange: #fd7e14;
+  --yellow: #f6c23e;
+  --green: #1cc88a;
+  --teal: #20c9a6;
+  --cyan: #36b9cc;
+  --white: #fff;
+  --gray: #858796;
+  --gray-dark: #5a5c69;
+  --primary: #4e73df;
+  --secondary: #858796;
+  --success: #1cc88a;
+  --info: #36b9cc;
+  --warning: #f6c23e;
+  --danger: #e74a3b;
+  --light: #f8f9fc;
+  --dark: #5a5c69;
+  --seashell: #fff5ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', eina04, eina02, elianto;
+}
+
+a, a:focus, a:hover 
+{
+    text-decoration: none;
+    outline: 0;
+    color: #fff;
+}
+
+/*** END COMMON STYLE ***/
+
+/*** START HEADER STYLE ***/
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-details{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header i{
+  font-size: 60px;
+  color: #6f42c1;
+}
+
+.header .logo_name{
+  color: #6f42c1;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+    
+}
+
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+    
+}
+
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.nav-links ul li::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+
+.text-box{
+	width:90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text-box h1{
+  font-size: 50px;
+  font-family: elianto;
+  letter-spacing: 1px;
+}
+
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 15px;
+	color: #fff;
+    letter-spacing: 1px;
+}
+
+.visit-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 16px;
+	background: transparent;
+}
+
+.visit-btn:hover{
+	border: 1px solid #6f42c1;
+	background: #6f42c1;
+	transition: 1s;
+}
+
+nav .fas{
+	display: none;
+}
+
+
+/*-------------SERVICES------------*/
+.services{
+  background-color: #F4F6FA;  
+}
+
+.inner-services{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+.services-row{
+	margin-top: 5%;
+	display: flex;
+	justify-content:space-between;
+}
+.services-col{
+	flex-basis: 31%;
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding:20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+    font-size: 19px;
+}
+.services-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*----------- Location ----------*/
+.location{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+    margin-bottom: 40px;
+}
+.location-row{
+	margin-top: 5%;
+	display: flex;
+	justify-content:space-between;
+}
+.location-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.location-col img{
+	width: 100%;
+	display: block;
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 1s;
+}
+.layer:hover{
+	background: rgba(226,0,0,0.7);
+}
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 1s
+}
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1;
+}
+
+
+.fas.fa-star-of-life{
+	color: red;
+}
+
+.note p{
+	color: #252424;
+	font-size: 14px;
+}
+/*** START TITLE & TAGLINE & SEPARATOR STYLE ***/
+
+.section-header 
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header > .section-tagline 
+{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.section-header > .section-title 
+{
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+
+/*** END TITLE & TAGLINE & SEPARATOR STYLE ***/
+
+
+/*** START OUR BRANDS SECTION STYLE ***/
+
+
+.our-brands
+{
+    padding:50px 0px;
+    background-color: #F4F6FA;  
+}
+
+.car-brands .car-brand
+{
+    min-height:330px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-color: #f9f9f9;
+    transition-duration: 0.2s;
+}
+
+.car-brands .col-md-4
+{
+    margin-bottom: 20px;
+}
+
+.car-brands .car-brand:hover 
+{
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-box-shadow: 0 22px 40px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 22px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.15);
+}
+
+.car-brands .car-brand .brand_name
+{
+    padding:10px 20px 10px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    z-index: 1;
+}
+
+.car-brands .car-brand .brand_name>h3
+{
+    color:white;
+    font-size:24px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin:0px;
+    
+}
+
+/*** END OUR BRANDS SECTION STYLE ***/
+
+/*** START FOOTER STYLE ***/
+
+.widget_section
+{
+    background-color: #222227;
+    padding: 100px 0;
+}
+
+.widget_social 
+{
+    display: block;
+    text-align: left;
+    padding:0px;
+    margin-top:30px;
+}
+
+.widget_social li 
+{
+    display: inline-block;
+}
+
+.widget_social li a 
+{
+    color: #777;
+    font-size: 12px;
+    margin-right: 20px;
+    transition-duration: 0.5s;
+}
+
+.widget_social li a:hover
+{
+    color:#04DBC0;
+}
+
+.footer_widget p 
+{
+    color: #999;
+}
+
+.footer_widget h3 
+{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-bottom:25px;
+}
+
+.subscribe_form 
+{
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.subscribe_form .form_input 
+{
+    display: block;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 10px;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.opening_time li 
+{
+    color: #999;
+    line-height: 35px;
+}
+
+.subscribe_form .submit 
+{
+    background-color: #04DBC0;
+    color: #fff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 10px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.subscribe_form .submit:hover 
+{
+    background-color: #fab700;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer_section 
+{
+    display: block;
+    background-color: #222227;
+    border-top: 1px solid #333;
+    padding: 15px 0;
+}
+
+.footer_section .copyright 
+{
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer_link
+{
+    display: block;
+    text-align: right;
+    margin:0px;
+    padding: 0px;
+}
+
+.footer_link li 
+{
+    display: inline-block;
+}
+
+.footer_link li a 
+{
+    font-family: "Work Sans",sans-serif;
+    color: #ddd;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.footer_widget ul.contact_info
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    color:#999;
+}
+.footer_widget ul.contact_info li
+{
+    padding:0.5rem 0;
+}
+
+.footer_widget ul.contact_info li i
+{
+    margin-right:15px;
+}
+
+/*** END FOOTER STYLE ***/
+
+/**** START RESERVATION SECTION STYLE ***/
+
+.reservation_section
+{
+    background-image: url('../images/ui_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px #2d2d2d7d;
+}
+
+.reservation_section .car-reservation-form
+{
+    box-shadow: 0 5px 40px rgb(0 0 0 / 10%);
+    padding: 10px 40px 40px;
+    background-color: #F4F6FA;  
+}
+
+.car-reservation-form .text_header
+{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+
+.car-reservation-form label
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.sbmt-bttn
+{
+    background: #04DBC0;
+    color: white;
+    padding: 10px 25px;
+    width: 100%;
+}
+
+
+.sbmt-bttn:hover
+{
+    background: #5856D6;
+    border-color: #5856D6;
+    color: white;
+}
+
+/**** END RESERVATION SECTION STYLE ***/
+
+/*** START CONTACT US SECTION STYLE ***/
+
+.contact-section
+{
+	padding:100px 0px;
+}
+
+.contact-info h2
+{
+	font-size: 36px;
+	color: #303133;
+	margin: 0 0 8px;
+	font-weight: 400;
+	line-height: 48px;
+	letter-spacing: -0.04em;
+    text-align: left;
+}
+
+
+.contact-info h3 
+{
+    line-height: 28px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-info h4 
+{
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.contact-form 
+{
+    background-color: #fff;
+    padding: 50px 40px;
+    -webkit-box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1), 0px -6px 0px 0px rgba(248, 99, 107, 0.004);
+    box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1), 0px -6px 0px 0px rgba(248, 99, 107, 0.004);
+    border-radius: 3px;
+}
+
+.form-control
+{
+    background-color: #fff;
+    border-radius: 0;
+    padding: 25px 10px;
+    box-shadow: none;
+    border: 2px solid #eee;
+}
+
+.form-control:focus 
+{
+    border-color: #04DBC0;
+    box-shadow: none;
+    outline: none;
+}
+
+.contact_send_btn
+{
+    background-color: #04DBC0;
+    color: #fff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 10px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact_send_btn:hover
+{
+    background-color: #fab700;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*** END CONTACT US SECTION STYLE ***/
+
+/**** START OF NAVBAR STYLE ****/
+
+.nav-header
+{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* above navbar */
+
+
+/* navbar */
+@keyframes sticky-navbar 
+{
+    from {top: 45;}
+    to {top: 0;}
+}
+
+.sticky-navbar
+{
+    animation-name: sticky-navbar;
+    animation-duration: 1s;
+    background-color: #000000 !important;
+
+}
+
+.navbar .logo-details{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar i{
+  font-size: 60px;
+  color: #6f42c1;
+}
+
+.navbar .logo_name{
+  color: #6f42c1;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar
+{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-light .navbar-toggler
+{
+    background-color: #f9f9ff;
+}
+
+.navbar-brand 
+{
+    font-family: "PT Sans Narrow";
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-light .navbar-brand
+{
+    color:white;
+}
+
+.navbar-brand:hover
+{
+    color:white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link
+{
+    color:white;
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+    color:white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+    color: #04DBC0;
+}
+
+/**** END OF NAVBAR STYLE ****/
+
+/**** START RESERVE PAGE (reserve.php) STYLE ****/
+
+.reserve-banner-section
+{
+    background-image: url('../images/andras-vas-mKrPowm00s8-unsplash.jpg');
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px #2d2d2d8c;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.reserve-banner-section > h2
+{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: elianto;
+    font-size: 50px;
+}
+
+.items_tab {
+    border-radius: 4px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgb(60 66 87 / 4%), 0 0 10px 0 rgb(0 0 0 / 4%);
+}
+.itemListElement {
+    font-size: 14px;
+    line-height: 1.29;
+    border-bottom: solid 1px #e5e5e5;
+    cursor: pointer;
+    padding: 16px 12px 18px 12px;
+}
+
+.item_details {
+    width: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+}
+.item_select_part {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.select_item_bttn {
+    width: 55px;
+    display: flex;
+    margin-left: 30px;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+.item_label {
+    color: #04DBC0;
+    border-color: #04DBC0;
+    background: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+.item_label:hover
+{
+	color: white;
+    border-color: #fab700;
+    background: #fab700;
+}
+.item_label.active
+{
+	color: white !important;
+    border-color: #fab700 !important;
+    background: #fab700 !important;
+}
+.item_label:focus
+{
+	box-shadow:none !important;
+}
+.radio_car_select {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}
+.car_reservation_section
+{
+    padding: 20px 0px 50px 0px;
+}
+.car_reservation_section .client_details
+{
+	box-shadow: 0 5px 40px rgb(0 0 0 / 10%);
+    padding: 20px;
+}
+
+.car_reservation_section .client_details label
+{
+	font-size: 13px;
+    font-weight: bold;
+}
+
+.reservation_cards p
+{
+	margin:0px;
+	padding: 20px 10px;
+	font-size:16px;
+}
+.reservation_cards p>span
+{
+	font-weight:600;
+}
+
+
+/**** END RESERVE PAGE (reserve.php) STYLE ****/
+
