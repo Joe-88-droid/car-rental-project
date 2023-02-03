@@ -11,5 +11,5 @@ This is a car-rental project mainly made with php; contains both user and admin 
 2. Create a new database; name it "car_rental" and import the sql file provided above to the newly created database
 
 #### additional information
-url for client page - http://localhost/car_rental/
-url for admin page - http://localhost/car_rental/admin/dashboard.php
+1. url for client page - http://localhost/car_rental/
+2. url for admin page - http://localhost/car_rental/admin/dashboard.php
