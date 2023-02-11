@@ -13,4 +13,7 @@ This is a car-rental project mainly made with php; contains both user and admin 
 #### additional information
 1. url for client page - http://localhost/car_rental/
 2. url for admin page - http://localhost/car_rental/admin/dashboard.php
+3. admin-page
+  username: car_admin 
+  password: 123
 3. root folder should be named "car_rental"
